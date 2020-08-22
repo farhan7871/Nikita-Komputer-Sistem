@@ -1,0 +1,35 @@
+
+-KELOLA BARANG-
+ID
+NAMA BARANG
+JENIS BARANG
+HARGA BARANG
+
+// dd($data);
+
+KelolaBarangRequest
+
+-KELOLA TOKO-
+ID 
+NAMA TOKO
+ALAMAT TOKO
+
+-DATA PEMBELIAN-
+TANGGAL
+TOKO (Korelasi dengan nama toko di tabel kelola toko)
+NAMA BARANG (Korelasi dengan Nama Barang di tabel kelola barang)
+BANYAK
+HARGA (BANYAK + HARGA) (Korelasi dengan harga barang di tabel kelola barang)
+TOTAL
+JUAL
+
+-DATA PENJUALAN-
+TANGGAL 
+NAMA PEMBELI 
+NAMA BARANG (Korelasi dengan Nama Barang di tabel kelola barang)
+BANYAK
+HARGA_ID (KORELASI DENGAN JUAL TABLE DATA PEMBELIAN)
+TOTAL (BANYAK + HARGA)
+MODAL (Harga Barang Tabel Kelola Barang * Dengan Banyak Data Penjualan)
+UNTUNG (TOTAL - MODAL)
+
